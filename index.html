@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <form id="survey-form" action="#">
+    <h1 id="title">Please write information <br> about yourthelf in this form</h1>
+    <p id="description">Thanks for your help</p>
+    <div class="div-form">
+    <label class="label" for="name-label">Name</label>
+    <input  class="input" type="text" id="name-label" placeholder ="Savko Angelika">
+    <label class="label" for="email-label">Email</label>
+    <input  class="input" type="email" id="email-label" placeholder ="savko@gmail.com" >
+    <label class="label" for="number-label">Age</label>
+    <input class="input"  type="number" min="18" max="100" id="number-label" placeholder ="23">
+    <label class="label" for="dropdown"> Choose your level</label>
+    <input class="input" type="text" name="level" list="dropdown">
+    <datalist id="dropdown">
+        <option value="A1">Elementary</option>
+        <option value="A2">Pre intermediate</option>
+        <option value="B1">Intermediate</option>
+        <option value="B2">Upper intermediate</option>
+        <option value="C1">Advanced</option>
+        <option value="C2">Proficiency</option>
+    </datalist>
+    <textarea class="textarea"  placeholder="Comment" rows="10"></textarea>
+  <button type="submit" id="submit">Send</button>
+
+</div>
+</form>
+</body>
+</html>
